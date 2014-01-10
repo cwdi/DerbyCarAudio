@@ -6,11 +6,13 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(23, GPIO.IN)
 GPIO.setup(24, GPIO.IN)
 GPIO.setup(25, GPIO.IN)
+
 while True:
-if ( GPIO.input(23) == False ):
-os.system('mpg321 6days.mp3 &')
-if ( GPIO.input(24) == False ):
-os.system('mpg321 6days.mp3 &')
-if ( GPIO.input(25)== False ):
-os.system('mpg321 6days.mp3 &')
-sleep(0.1);
+   if ( GPIO.input(24) != 0 ):
+     print "24 pressed"
+     os.system('mpg321 Booing.mp3 &')
+     sleep(2.51);
+   if ( GPIO.input(25) != 0 ):
+     print "25 pressed"
+     os.system('mpg321 Cheering.mp3 &')
+     sleep(2.51);
