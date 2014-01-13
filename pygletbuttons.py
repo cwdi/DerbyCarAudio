@@ -69,13 +69,13 @@ def kinput(self, keypress):
 @window.event
 def on_key_press(symbol, modifiers):
     if symbol == key.B:
-        bpress('/Users/curtis/Audio/hey.wav')
+        bpress('Booing.mp3')
         print 'The "b" key was pressed.'
     elif symbol == key.A:
         apress()
         print 'The a  key was pressed.'
     elif symbol == key.D:
-        dpress('/Users/curtis/Audio/6days.mp3')
+        dpress('Ceering.mp3')
         print 'The d key was pressed.'
 
 
